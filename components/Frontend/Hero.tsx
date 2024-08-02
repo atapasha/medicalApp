@@ -1,30 +1,34 @@
 "use client";
 
 import React, { useState } from "react";
+import SearchBox from "./SearchBar";
+import SearchBar from "./SearchBar";
 
 const Hero = () => {
   return (
     <>
-      <div className="bg-blue-950">
-        <div className="relative   pb-[110px] pt-[120px] dark:bg-dark lg:pt-[50px] mx-w-6xl mx-auto ">
+      <div className="bg-blue-950 w-full ">
+        <div className="relative     pb-[110px] pt-[120px] dark:bg-dark lg:pt-[50px] mx-w-6xl mx-auto ">
           <div className="container">
             <div className="-mx-4 flex flex-wrap">
               <div className="w-full px-4 lg:w-5/12">
                 <div className="hero-content">
-                  <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
+                  <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-gray-50 dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
                     Kickstart Startup Website with TailGrids
                   </h1>
-                  <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
+                  <p className="mb-8 max-w-[480px] text-base text-gray-50 dark:text-dark-6">
                     With TailGrids, business and students thrive together.
                     Business can perfectly match their staffing to changing
                     demand throughout the dayed.
                   </p>
                   {/* SEARCH BAR HERE */}
-                  <ul className="flex flex-wrap items-center">
+                  <SearchBar />
+                  {/* City Buttons */}
+                  <ul className="flex flex-wrap items-center mt-6">
                     <li>
                       <a
                         href="/#"
-                        className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-dark lg:px-7"
+                        className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-dark lg:px-7"
                       >
                         Get Started
                       </a>
@@ -32,14 +36,13 @@ const Hero = () => {
                     <li>
                       <a
                         href="/#"
-                        className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] hover:text-primary dark:text-white"
+                        className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] bg-slate-50 hover:text-primary rounded-md ml-[21px] dark:text-white"
                       >
                         <span className="mr-2">
                           <svg
                             width="24"
                             height="25"
                             viewBox="0 0 24 25"
-                            fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <circle
