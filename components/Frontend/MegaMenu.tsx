@@ -193,7 +193,7 @@ export default function MegaMenu() {
                       title={component.title}
                       href={`/services${component.slug}`}
                     >
-                      {component.description}
+                      {component.descriptioin}
                     </ListItem>
                   ))}
                 </ul>
