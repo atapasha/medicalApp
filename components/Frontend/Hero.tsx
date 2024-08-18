@@ -222,10 +222,10 @@ const Navbar = () => {
                 } `}
               >
                 <ul className="block lg:flex">
-                  <ListItem NavLink="/#">Home</ListItem>
+                  {/* <ListItem NavLink="/#">Home</ListItem>
                   <ListItem NavLink="/#">Payment</ListItem>
                   <ListItem NavLink="/#">About</ListItem>
-                  <ListItem NavLink="/#">Blog</ListItem>
+                  <ListItem NavLink="/#">Blog</ListItem> */}
                 </ul>
               </nav>
             </div>
