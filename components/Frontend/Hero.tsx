@@ -3,8 +3,11 @@
 import React, { useState } from "react";
 import SearchBox from "./SearchBar";
 import SearchBar from "./SearchBar";
-
+import TransitionalText from "./TransitionalText";
+import { Pill } from "lucide-react";
 const Hero = () => {
+  const TEXTS = ["Acupunctu re", "Message", "Dental", "Cosmetic", "Dietitian"];
+
   return (
     <>
       <div className="bg-blue-950 w-full ">
@@ -12,9 +15,14 @@ const Hero = () => {
           <div className="container">
             <div className="-mx-4 flex flex-wrap">
               <div className="w-full px-4 lg:w-5/12">
-                <div className="hero-content">
-                  <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-gray-50 dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
-                    Kickstart Startup Website with TailGrids
+                <div className="hero-content ml-12">
+                  <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-blue-50 dark:text-white sm:text-[42px] lg:text-[40px] xl:text-4xl">
+                    <span> Book Your </span>
+                    <span className="text-blue-500">
+                      <TransitionalText TEXTS={TEXTS} />
+                    </span>
+                    <br />
+                    <span>session now</span>
                   </h1>
                   <p className="mb-8 max-w-[480px] text-base text-gray-50 dark:text-dark-6">
                     With TailGrids, business and students thrive together.
@@ -30,15 +38,16 @@ const Hero = () => {
                         href="/#"
                         className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-dark lg:px-7"
                       >
-                        Get Started
+                        Need doctor Urgently
                       </a>
                     </li>
                     <li>
                       <a
                         href="/#"
-                        className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] bg-slate-50 hover:text-primary rounded-md ml-[21px] dark:text-white"
+                        className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-gray-50   hover:text-primary rounded-md ml-[21px] dark:text-white"
                       >
                         <span className="mr-2">
+                          <Pill className="flex-shrink-0 h-4 w-4 text-blue-600" />
                           <svg
                             width="24"
                             height="25"
@@ -71,14 +80,42 @@ const Hero = () => {
                             />
                           </svg>
                         </span>
-                        Download App
+                        Need a Refill
                       </a>
                     </li>
                   </ul>
+                
+<div className="py-4  pt-8 flex gap-4">
+ 
+ 
+<div className="flex flex-col items-center justify-center">
+
+<span className="font-bold text-gray-50">600
+   
+    
+</span>
+
+<span className="text-sm text-gray-300">
+Active specialist
+   </span>
+</div>
+
+<div className="flex flex-col items-center justify-center">
+
+<span className="font-bold text-gray-50">1800
+   
+ 
+</span>
+<span className="text-sm text-gray-300">
+Active patients
+   </span>
+
+</div>
+                  </div>
                 </div>
               </div>
               <div className="hidden px-4 lg:block lg:w-1/12"></div>
-              <div className="w-full px-4 lg:w-6/12">
+              <div className="w-full px-4 lg:w-5/12">
                 <div className="lg:ml-auto lg:text-right">
                   <div className="relative z-10 inline-block pt-11 lg:pt-0">
                     <img
