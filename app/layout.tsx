@@ -17,6 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+      <div>سحر بایرامی گلمسن   دا سورا ناراحات اولما</div>
+
         <h2>Im a overall Layout </h2>
         {children}
       </body>
