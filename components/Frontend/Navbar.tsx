@@ -70,7 +70,7 @@ export default function Example() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="#"
-            className="text-sm font-semibold leading-6 text-gray-50 py-3 px-6 rounded-md bg-red-400"
+            className="text-sm font-semibold leading-6 text-gray-50 py-3 px-6 rounded-md bg-blue-400"
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
@@ -137,7 +137,7 @@ export default function Example() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-50 hover:bg-gray-50"
                 >
-                  Log in
+                  Log in 
                 </a>
               </div>
             </div>
